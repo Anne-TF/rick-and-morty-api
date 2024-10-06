@@ -1,0 +1,60 @@
+{
+  "name": "rm-app-test",
+  "version": "0.0.1",
+  "description": "A Quasar Project",
+  "productName": "Rick and Morty",
+  "author": "Anais Torrens",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.ts,.vue ./",
+    "lint:fix": "eslint --ext .js,.ts,.vue ./ --fix",
+    "format": "prettier --write \"**/*.{js,ts,vue,scss,html,md,json}\" --ignore-path .gitignore",
+    "test": "echo \"No test specified\" && exit 0",
+    "start": "node server.js",
+    "start:dev": "quasar dev",
+    "start:dev:pwa": "quasar dev -m pwa",
+    "start:dev:ssr": "quasar dev -m ssr",
+    "ts:check": "tsc -p tsconfig.build.json --noEmit",
+    "prepare": "husky install",
+    "pre:commit": "lint-staged",
+    "build": "quasar build"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.16.9",
+    "axios": "~1.6.7",
+    "axios-retry": "~4.0.0",
+    "connect-history-api-fallback": "^2.0.0",
+    "dotenv": "^16.4.5",
+    "envalid": "^8.0.0",
+    "express": "^4.18.3",
+    "husky": "~8.0.3",
+    "pinia": "~2.1.7",
+    "process": "^0.11.10",
+    "quasar": "~2.14.5",
+    "serve-static": "^1.15.0",
+    "vue": "~3.4.20",
+    "vue-i18n": "~9.9.1",
+    "vue-router": "~4.3.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.8.1",
+    "@commitlint/config-conventional": "^17.8.1",
+    "@intlify/vite-plugin-vue-i18n": "~3.4.0",
+    "@quasar/app-vite": "~1.7.3",
+    "@types/node": "~20.11.20",
+    "@typescript-eslint/eslint-plugin": "~7.0.2",
+    "@typescript-eslint/parser": "~7.0.2",
+    "autoprefixer": "~10.4.17",
+    "eslint": "~8.57.0",
+    "eslint-config-prettier": "~9.1.0",
+    "eslint-plugin-vue": "~9.22.0",
+    "lint-staged": "^15.2.2",
+    "prettier": "~3.2.5",
+    "typescript": "~5.3.3"
+  },
+  "engines": {
+    "node": "^20 || ^18 || ^16",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}

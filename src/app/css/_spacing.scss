@@ -1,0 +1,98 @@
+@for $size from 0 through 1000 {
+  .flex-order-#{$size} {
+      order: #{$size} !important;
+  }
+  .basis-#{$size} {
+      flex-basis: #{$size}px !important;
+  }
+  .br-#{$size} {
+      border-radius: #{$size}px !important;
+  }
+  .m-#{$size} {
+      margin: #{$size}px !important;
+  }
+  .ml-#{$size} {
+      margin-left: #{$size}px !important;
+  }
+  .-mt-#{$size} {
+    margin-top: -#{$size}px !important;
+  }
+  .mt-#{$size} {
+      margin-top: #{$size}px !important;
+  }
+  .mr-#{$size} {
+      margin-right: #{$size}px !important;
+  }
+  .my-#{$size} {
+      margin-top: #{$size}px !important;
+      margin-bottom: #{$size}px !important;
+  }
+  .mx-#{$size} {
+      margin-right: #{$size}px !important;
+      margin-left: #{$size}px !important;
+  }
+  .py-#{$size} {
+      padding-top: #{$size}px !important;
+      padding-bottom: #{$size}px !important;
+  }
+  .pt-#{$size} {
+      padding-top: #{$size}px !important;
+  }
+  .pt-percentage-#{$size} {
+    padding-top: #{$size + '%'} !important;
+  }
+  .pl-#{$size} {
+      padding-left: #{$size}px !important;
+  }
+  .pr-#{$size} {
+      padding-right: #{$size}px !important;
+  }
+  .px-#{$size} {
+      padding-right: #{$size}px !important;
+      padding-left: #{$size}px !important;
+  }
+  .pb-#{$size} {
+      padding-bottom: #{$size}px !important;
+  }
+  .pb-percentage-#{$size} {
+      padding-bottom: #{$size + '%'} !important;
+  }
+  .mb-#{$size} {
+      margin-bottom: #{$size}px !important;
+  }
+  .h-#{$size} {
+      min-height: #{$size}px !important;
+      height: #{$size}px !important;
+      max-height: #{$size}px !important;
+  }
+  .w-#{$size} {
+      min-width: #{$size}px !important;
+      width: #{$size}px !important;
+      max-width: #{$size}px !important;
+  }
+  .hp-#{$size} {
+      min-height: #{$size + '%'} !important;
+      height: #{$size + '%'} !important;
+      max-height: #{$size + '%'} !important;
+  }
+  .hv-#{$size} {
+    min-height: #{$size + 'vh'} !important;
+    height: #{$size + 'vh'} !important;
+    max-height: #{$size + 'vh'} !important;
+  }
+  .wp-#{$size} {
+      min-width: #{$size + '%'} !important;
+      width: #{$size + '%'} !important;
+      max-width: #{$size + '%'} !important;
+  }
+  .hp-#{$size}-vh {
+    min-height: #{$size + 'vh'} !important;
+    height: #{$size + 'vh'} !important;
+    max-height: #{$size + 'vh'} !important;
+  }
+  .wp-#{$size}-vw {
+    min-width: #{$size + 'vw'} !important;
+    width: #{$size + 'vw'} !important;
+    max-width: #{$size + 'vw'} !important;
+  }
+}

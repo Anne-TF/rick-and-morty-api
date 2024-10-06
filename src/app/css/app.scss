@@ -1,0 +1,96 @@
+// IMPORTS
+@import '_variables';
+@import '_fonts';
+@import '_spacing';
+
+// COLORS
+$colors: (
+  'primary': $app-primary,
+  'secondary': $app-secondary,
+  'tertiary': $app-tertiary,
+  'danger': $app-danger,
+  'gray': $app-gray,
+  'gray-darker': $app-gray-darker,
+  'gray-middle': $app-gray-middle,
+  'info': $app-info,
+  'warning': $app-warning,
+  'success': $app-success,
+);
+
+// COLOR RELATED CLASSED
+@each $name, $color in $colors {
+
+  // classes for texts in every color
+  .text-app-#{$name} {
+    color: $color !important;
+  }
+  // classes for backgrounds in every color
+  .bg-app-#{$name} {
+    background-color: $color !important;
+  }
+  // classes for borders in every color
+  .border-app-#{$name} {
+    border-left: 1px solid $color !important;
+    border-right: 1px solid $color !important;
+    border-top: 1px solid $color !important;
+    border-bottom: 1px solid $color !important;
+  }
+
+  .divider-app-#{$name} {
+    background-color: $color !important;
+  }
+}
+
+// FONTS
+html,
+body {
+  font-family: $light;
+  font-size: clamp(14px, 16px, 17px);
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.custom-size-input {
+  .q-field__control {
+    height: 3rem !important;
+    border-radius: 8px;
+  }
+  .q-field__marginal {
+    height: 3rem !important;
+  }
+
+  .q-field__control,
+  .q-field--outlined.q-field--rounded .q-field__control,
+  .q-field--outlined {
+    min-height: 3rem !important;
+  }
+
+  .q-field__native {
+    min-height: 3rem !important;
+    height: 3rem !important;
+    max-height: 3rem !important;
+  }
+
+  .q-field--error .q-field__bottom {
+    color: $app-danger !important;
+  }
+
+  .text-negative {
+    color: $app-danger !important;
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+
+  @media (min-width: 900px) {
+    background: $app-secondary;
+  }
+}
